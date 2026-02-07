@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artes Luis Studio - Portafolio</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="portafolio.css" />
+</head>
+
+<body class="portafolio-page">
+    <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav class="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="mision.html">Misión - Visión</a>
+        <a href="portafolio.html" class="active">Portafolio</a>
+        <a href="planes.html">Planes</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="portafolio-content">
+        <h1>Portafolio</h1>
+        <p>Explora nuestros trabajos destacados en distintas áreas del diseño.</p>
+
+        <section class="gallery">
+            
+            <div class="gallery-item">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="img/diseño1.png" alt="Diseño de Branding Premium" />
+                        <span>Diseños</span>
+                    </div>
+                    <div class="back">
+                        <h3>Diseños de Branding Premium</h3>
+                        <p class="small-description">🔥 Identidades que enamoran. Creamos la esencia visual de tu marca desde cero. 
+                          Desarrollamos identidades visuales completas, incluyendo paletas de color, tipografía y manuales de marca para 
+                          un impacto memorable y profesional. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="img/diseño2.png" alt="Creación de Logotipos Minimalistas" />
+                        <span>Logos</span>
+                    </div>
+                    <div class="back">
+                        <h3>Creación de Logotipos Minimalistas</h3>
+                        <p class="small-description">✨ Símbolos sencillos, impacto máximo. Tu logo, la cara de tu negocio.
+                          Nos especializamos en logotipos vectoriales y escalables que comunican la esencia de tu negocio de forma 
+                          clara y moderna, aptos para cualquier plataforma.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="img/diseño3.jpg" alt="Ilustraciones Digitales y Concept Art" />
+                        <span>Dibujos</span>
+                    </div>
+                    <div class="back">
+                        <h3>Ilustraciones Digitales y Concept Art</h3>
+                        <p class="small-description">✍️ Da vida a tus ideas. Ilustraciones únicas y de alta calidad.
+                          Desde mascotas corporativas hasta personajes detallados, nuestro equipo crea ilustraciones vibrantes 
+                          y originales para campañas publicitarias o contenido digital.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="img/diseño4.jpg" alt="Diseño de Flyers Promocionales" />
+                        <span>Flyers</span>
+                    </div>
+                    <div class="back">
+                        <h3>Diseño de Flyers Promocionales</h3>
+                        <p class="small-description">📢 Eventos que destacan. Flyers diseñados para atraer y convertir.
+                        Diseño enfocado en la conversión para eventos y promociones, asegurando que el mensaje clave 
+                          sea atractivo y fácil de leer tanto en formato impreso como digital.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="img/diseño5.jpg" alt="Tarjetas de Presentación Corporativas" />
+                        <span>Tarjetas</span>
+                    </div>
+                    <div class="back">
+                        <h3>Tarjetas de Presentación Corporativas</h3>
+                        <p class="small-description">💼 Tu primer apretón de manos. Tarjetas que dejan una impresión duradera.
+                        Diseños elegantes y profesionales en alta resolución, listos para imprenta, que reflejan la seriedad y 
+                        calidad de tu marca personal o empresarial.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="img/diseño6.jpeg" alt="Gráficos para Redes Sociales" />
+                        <span>Graphics</span>
+                    </div>
+                    <div class="back">
+                        <h3>Gráficos para Redes Sociales</h3>
+                        <p class="small-description">📱 Contenido que vende. Diseños optimizados para engagement en todas las plataformas.
+                        Creación de contenido visual optimizado para Instagram, Facebook y TikTok, aumentando el engagement y manteniendo una coherencia estética en tu feed.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <a href="enlace.html" class="btn-disenos btn btn-primary">Conoce nuestros Diseños Aquí</a>
+    </main>
+
+    <footer class="footer-nosotros">
+        <div class="footer-main">
+            <p>&copy; 2025 Artes Luis Studio. Todos los derechos reservados.</p>
+            <div class="footer-logos">
+                <a href="https://wa.me/51940545860" target="_blank" class="whatsapp-link">
+                    <img src="img/logo-whatsapp.png" alt="WhatsApp" />
+                    <span>Chatea con nosotros</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61578174790494" target="_blank">
+                    <img src="img/logo-facebook.png" alt="Facebook" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Función para abrir y cerrar el menú lateral en móviles
+        function toggleMenu() {
+            document.querySelector('nav.sidebar').classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
