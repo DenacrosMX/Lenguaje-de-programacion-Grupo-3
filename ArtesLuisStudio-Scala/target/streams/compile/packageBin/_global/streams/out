@@ -1,0 +1,187 @@
+[debug] Packaging C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\artesluisstudio-scala_2.13-0.1.0-SNAPSHOT.jar ...
+[debug] Input file mappings:
+[debug] 	com
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\com
+[debug] 	com\artesluisstudio
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\com\artesluisstudio
+[debug] 	com\artesluisstudio\Main$.class
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\com\artesluisstudio\Main$.class
+[debug] 	com\artesluisstudio\Main$delayedInit$body.class
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\com\artesluisstudio\Main$delayedInit$body.class
+[debug] 	com\artesluisstudio\Main.class
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\com\artesluisstudio\Main.class
+[debug] 	web
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web
+[debug] 	web\artesluis_avance_3_admin_completo
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\.vscode
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\.vscode
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\.vscode\settings.json
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\.vscode\settings.json
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.gitattributes
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.gitattributes
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.gitignore
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.gitignore
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.mvn
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.mvn
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.mvn\wrapper
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.mvn\wrapper
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.mvn\wrapper\maven-wrapper.properties
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\.mvn\wrapper\maven-wrapper.properties
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\mvnw
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\mvnw
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\mvnw.cmd
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\mvnw.cmd
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\pom.xml
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-backend\artesluis-backend\pom.xml
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\.vscode
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\.vscode
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\.vscode\settings.json
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\.vscode\settings.json
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\admin.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\admin.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\conexion.php
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\conexion.php
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\contacto.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\contacto.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\contacto.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\contacto.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\enlace.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\enlace.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\enlace.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\enlace.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\cliente1.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\cliente1.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\cliente2.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\cliente2.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\cliente3.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\cliente3.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\correo.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\correo.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño1.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño1.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño2.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño2.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño3.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño3.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño4.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño4.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño5.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño5.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño6.jpeg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño6.jpeg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_001.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_001.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_002.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_002.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_003.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_003.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_004.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_004.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_005.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_005.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_006.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_006.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_007.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_007.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_008.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_008.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_009.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_009.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_010.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_010.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_011.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_011.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_012.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_012.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_013.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_013.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_014.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_014.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_015.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_015.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_016.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_016.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_017.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_017.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_018.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_018.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_019.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_019.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_020.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_020.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_021.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_021.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_022.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_022.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_023.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_023.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_024.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_024.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_025.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_025.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_026.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_026.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_027.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_027.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_028.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\diseño_028.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\fondo-pinceladas.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\fondo-pinceladas.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\fondo.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\fondo.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-artesluis.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-artesluis.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-facebook.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-facebook.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-misión.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-misión.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-whatsapp.png
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\logo-whatsapp.png
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\testimonial1.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\testimonial1.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\testimonial2.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\testimonial2.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\testimonial3.jpg
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\testimonial3.jpg
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\video.mp4
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\img\video.mp4
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\index.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\index.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\login.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\login.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\login.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\login.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\mision.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\mision.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\mision.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\mision.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\nosotros.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\nosotros.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\nosotros.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\nosotros.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\planes.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\planes.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\planes.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\planes.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\portafolio.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\portafolio.css
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\portafolio.html
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\portafolio.html
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\procesar_formulario.php
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\procesar_formulario.php
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\script.js
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\script.js
+[debug] 	web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\styles.css
+[debug] 	  C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\target\scala-2.13\classes\web\artesluis_avance_3_admin_completo\artesluis\artesluis-frontend\styles.css
+[debug] Done packaging.

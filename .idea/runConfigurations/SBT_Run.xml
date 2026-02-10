@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SBT Run" type="SbtTaskConfiguration" factoryName="sbt Task">
+    <option name="tasks" value="run" />
+    <option name="workingDir" value="$PROJECT_DIR$/ArtesLuisStudio-Scala" />
+    <option name="useSbtShell" value="true" />
+  </configuration>
+</component>

@@ -1,0 +1,122 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.11.7 (Eclipse Adoptium Java 17.0.16)
+[debug]       Load.loadUnit: plugins took 92.4083ms
+[debug]       Load.loadUnit: defsScala took 0.3898ms
+[debug] [Loading] Scanning directory C:\Users\artes\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\artes\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 21.7429 ms
+[debug]           Load.resolveProject(global-plugins) took 53.1466ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\artes\.sbt\1.0\plugins, plugins: List(<none>))) took 98.2779ms
+[debug] [Loading] Done in C:\Users\artes\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 125.5549ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.3758ms
+[debug]     Load.loadUnit(file:/C:/Users/artes/.sbt/1.0/plugins/, ...) took 231.464ms
+[debug]   Load.apply: load took 454.8025ms
+[debug]   Load.apply: resolveProjects took 7.8065ms
+[debug]   Load.apply: finalTransforms took 67.9445ms
+[debug]   Load.apply: config.delegates took 8.6033ms
+[debug]   Load.apply: Def.make(settings)... took 374.1672ms
+[debug]   Load.apply: structureIndex took 105.6674ms
+[debug]   Load.apply: mkStreams took 1.7225ms
+[info] loading global plugins from C:\Users\artes\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2170.5043ms
+[debug]           Load.loadUnit: plugins took 27.3794ms
+[debug]           Load.loadUnit: defsScala took 0.0039ms
+[debug] [Loading] Scanning directory C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.0145 ms
+[debug]               Load.resolveProject(artesluisstudio-scala-build) took 1.6728ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id artesluisstudio-scala-build, base: C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\project, plugins: List(<none>))) took 4.1479ms
+[debug] [Loading] Done in C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\project, returning: (artesluisstudio-scala-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 6.8829ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.0135ms
+[debug]         Load.loadUnit(file:/C:/Users/artes/Documents/UTP-Ciclo%20VII/Lenguaje%20de%20Programación/Proj-Artes-Luis-Estudio/ArtesLuisStudio-Scala/project/, ...) took 35.3498ms
+[debug]       Load.apply: load took 37.8758ms
+[debug]       Load.apply: resolveProjects took 0.2413ms
+[debug]       Load.apply: finalTransforms took 48.3215ms
+[debug]       Load.apply: config.delegates took 0.711ms
+[debug]       Load.apply: Def.make(settings)... took 95.3492ms
+[debug]       Load.apply: structureIndex took 29.5735ms
+[debug]       Load.apply: mkStreams took 0.003ms
+[info] loading project definition from C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 376.9423ms
+[debug]     Load.loadUnit: defsScala took 0.0041ms
+[debug] [Loading] Scanning directory C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala
+[debug]       Load.loadUnit: mkEval took 6.2774ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.8673 ms
+[info] loading settings for project artesluisstudio-scala from build.sbt...
+[debug]         Load.resolveProject(artesluisstudio-scala) took 12.0195ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id artesluisstudio-scala, base: C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala, plugins: List(<none>))) took 14.5193ms
+[debug] [Loading] Done in C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala, returning: (artesluisstudio-scala)
+[debug]     Load.loadUnit: loadedProjectsRaw took 180.3167ms
+[debug]     Load.loadUnit: cleanEvalClasses took 11.5946ms
+[debug]   Load.loadUnit(file:/C:/Users/artes/Documents/UTP-Ciclo%20VII/Lenguaje%20de%20Programación/Proj-Artes-Luis-Estudio/ArtesLuisStudio-Scala/, ...) took 570.0309ms
+[debug] Load.apply: load took 577.7858ms
+[debug] Load.apply: resolveProjects took 0.1293ms
+[debug] Load.apply: finalTransforms took 14.9182ms
+[debug] Load.apply: config.delegates took 0.576ms
+[debug] Load.apply: Def.make(settings)... took 58.1124ms
+[debug] Load.apply: structureIndex took 32.9113ms
+[debug] Load.apply: mkStreams took 0.0044ms
+[info] set current project to artesluisstudio-scala (in build file:/C:/Users/artes/Documents/UTP-Ciclo%20VII/Lenguaje%20de%20Programación/Proj-Artes-Luis-Estudio/ArtesLuisStudio-Scala/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

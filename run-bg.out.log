@@ -1,0 +1,10 @@
+[info] welcome to sbt 1.11.7 (Eclipse Adoptium Java 17.0.16)
+[info] loading global plugins from C:\Users\artes\.sbt\1.0\plugins
+[info] loading project definition from C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\project
+[info] loading settings for project artesluisstudio-scala from build.sbt...
+[info] set current project to artesluisstudio-scala (in build file:/C:/Users/artes/Documents/UTP-Ciclo%20VII/Lenguaje%20de%20Programación/Proj-Artes-Luis-Estudio/ArtesLuisStudio-Scala/)
+[info] running com.artesluisstudio.Main 
+==============================================
+Artes Luis Studio (Scala) ejecut�ndose en:
+http://localhost:8080
+==============================================

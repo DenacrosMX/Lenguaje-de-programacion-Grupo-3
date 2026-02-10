@@ -1,0 +1,4 @@
+[warn] C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\src\main\scala\com\artesluisstudio\Main.scala:14:16: Implicit definition should have explicit type (inferred scala.concurrent.ExecutionContextExecutor) [quickfixable]
+[warn]   implicit val ec = system.dispatcher
+[warn]                ^
+[warn] one warning found
