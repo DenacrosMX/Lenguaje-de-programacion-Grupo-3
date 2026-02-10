@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="converterVersion" value="2" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ArtesLuisStudio-Scala" />
+        <option name="modules">
+          <set>
+            <option value="C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Lenguaje-de-programacion-Grupo-3\ArtesLuisStudio-Scala" />
+            <option value="C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Lenguaje-de-programacion-Grupo-3\ArtesLuisStudio-Scala\project" />
+          </set>
+        </option>
+        <option name="resolveSbtClassifiers" value="true" />
+        <option name="sbtVersion" value="1.11.7" />
+        <option name="useSeparateCompilerOutputPaths" value="true" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>
