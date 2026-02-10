@@ -5,7 +5,8 @@ import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 
-import scala.io.StdIn
+import scala.concurrent.Await
+import scala.concurrent.duration.Duration
 
 object Main extends App {
 
@@ -35,6 +36,6 @@ object Main extends App {
   println("http://localhost:8080")
   println("==============================================")
 
-  StdIn.readLine()
-  system.terminate()
+  // Keep the server alive until the process is terminated.
+  Await.result(system.whenTerminated, Duration.Inf)
 }

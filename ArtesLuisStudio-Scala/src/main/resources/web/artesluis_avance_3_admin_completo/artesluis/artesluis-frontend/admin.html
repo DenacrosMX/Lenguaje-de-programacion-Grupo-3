@@ -3,12 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Admin - Artes Luis Studio</title>
 <link rel="stylesheet" href="nosotros.css">
 
 <style>
 /* =========================
-   BOTÓN CERRAR SESIÓN
+   BOTON CERRAR SESION
    ========================= */
 .logout-btn {
   width: 100%;
@@ -51,6 +54,62 @@
   box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
   margin-top: 18px;
 }
+.card h3 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.input-row input,
+.input-row select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  font-size: 0.95rem;
+}
+.input-row label {
+  font-size: 0.78rem;
+  color: #475569;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+.btn-save {
+  background: #10b981;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-save:hover { background: #059669; }
+.btn-secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 .controls {
   display: flex;
   flex-wrap: wrap;
@@ -62,16 +121,6 @@ input[type="text"], input[type="file"] {
   border: 1px solid #e2e8f0;
   width: 100%;
 }
-.btn-save {
-  background: #10b981;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.btn-save:hover { background: #059669; }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -87,6 +136,53 @@ input[type="text"], input[type="file"] {
   transition: transform .3s;
 }
 .thumb:hover { transform: scale(1.05); }
+
+/* === TABLA USUARIOS === */
+.table-wrap {
+  overflow-x: auto;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-top: 10px;
+}
+.admin-table th,
+.admin-table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 8px;
+  text-align: left;
+  color: #0f172a;
+}
+.admin-table th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #475569;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+.badge-admin { background: #dbeafe; color: #1d4ed8; }
+.badge-user { background: #fef3c7; color: #92400e; }
+.badge-active { background: #dcfce7; color: #166534; }
+.badge-inactive { background: #fee2e2; color: #991b1b; }
+.btn-xs {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.btn-edit { background: #2563eb; }
+.btn-toggle { background: #f59e0b; }
+.btn-delete { background: #ef4444; }
 
 /* === MODAL === */
 .modal {
@@ -130,30 +226,265 @@ input[type="text"], input[type="file"] {
     <div class="admin-header">
       <h1 style="color:#2563eb">Panel de Administración</h1>
     </div>
+    <p style="margin-top:6px;color:#475569;font-size:0.92rem">Acceso exclusivo para administradores.</p>
+
+    <section class="card">
+      <h3>Usuarios del sistema</h3>
+      <div class="form-grid">
+        <div class="input-row">
+          <label for="userLogin">Usuario (login)</label>
+          <input type="text" id="userLogin" placeholder="Usuario (login)">
+        </div>
+        <div class="input-row">
+          <label for="userPass">Contraseña</label>
+          <input type="text" id="userPass" placeholder="Contraseña">
+        </div>
+        <div class="input-row">
+          <label for="userName">Nombre completo</label>
+          <input type="text" id="userName" placeholder="Nombre completo">
+        </div>
+        <div class="input-row">
+          <label for="userEmail">Correo</label>
+          <input type="text" id="userEmail" placeholder="Correo">
+        </div>
+        <div class="input-row">
+          <label for="userPhone">Teléfono</label>
+          <input type="text" id="userPhone" placeholder="Teléfono">
+        </div>
+        <div class="input-row">
+          <label for="userRole">Rol</label>
+          <select id="userRole">
+            <option value="admin">admin</option>
+            <option value="usuario" selected>usuario</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-actions">
+        <label class="checkbox">
+          <input type="checkbox" id="userActive" checked>
+          Activo
+        </label>
+        <button id="saveUserBtn" class="btn-save">Crear usuario</button>
+        <button id="clearUserBtn" class="btn-secondary">Limpiar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Usuario actualizado</h3>
+      <div class="table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Rol</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody"></tbody>
+        </table>
+      </div>
+    </section>
 
     <section class="card">
       <h3>Agregar imagen al enlace / portafolio</h3>
       <div class="controls">
         <input type="file" id="fileInput" accept="image/*">
         <input type="text" id="urlInput" placeholder="O pega URL de imagen">
-        <input type="text" id="linkInput" placeholder="Enlace que abrirá la imagen">
+        <input type="text" id="linkInput" placeholder="Enlace que abrira la imagen">
         <button id="addBtn" class="btn-save">Agregar</button>
       </div>
       <p style="font-size:0.9rem;color:#475569;margin-top:8px">
-        Puedes subir desde archivo o pegar URL. Las imágenes se guardan en localStorage y se muestran en <strong>enlace.html</strong>.
+        Puedes subir desde archivo o pegar URL. Las imagenes se guardan en localStorage y se muestran en <strong>enlace.html</strong>.
       </p>
     </section>
 
     <section class="card">
-      <h3>Imágenes actuales</h3>
+      <h3>Imagenes actuales</h3>
       <div id="items" class="grid"></div>
     </section>
   </main>
 
 <script>
+const USERS_KEY = 'admin_users_v1';
 const STORAGE_KEY = 'gallery_v3';
+let editingIndex = null;
 
-// === Funciones para almacenamiento ===
+function seedUsers() {
+  const existing = localStorage.getItem(USERS_KEY);
+  if (existing) return;
+  const initial = [
+    {
+      username: 'admin',
+      password: 'admin123',
+      name: 'Luis Edilberto Niquen Neciosup',
+      email: 'admin@artesluis.com',
+      phone: '',
+      role: 'admin',
+      active: true
+    },
+    {
+      username: 'John',
+      password: '1234',
+      name: 'John Ramos',
+      email: 'U23230663@utp.edu.pe',
+      phone: '',
+      role: 'usuario',
+      active: true
+    },
+    {
+      username: 'Javier',
+      password: '1234',
+      name: 'Mejia Crisostomo Javier Eduardo',
+      email: 'U22100301@utp.edu.pe',
+      phone: '',
+      role: 'usuario',
+      active: true
+    },
+    {
+      username: 'Bruno',
+      password: '1234',
+      name: 'Bruno Santiago Reyes Vixce',
+      email: 'U19221035@utp.edu.pe',
+      phone: '',
+      role: 'usuario',
+      active: true
+    }
+  ];
+  localStorage.setItem(USERS_KEY, JSON.stringify(initial));
+}
+
+function loadUsers() {
+  return JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
+}
+
+function saveUsers(users) {
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
+}
+
+function resetForm() {
+  editingIndex = null;
+  document.getElementById('userLogin').value = '';
+  document.getElementById('userPass').value = '';
+  document.getElementById('userName').value = '';
+  document.getElementById('userEmail').value = '';
+  document.getElementById('userPhone').value = '';
+  document.getElementById('userRole').value = 'usuario';
+  document.getElementById('userActive').checked = true;
+  document.getElementById('saveUserBtn').textContent = 'Crear usuario';
+}
+
+function renderUsers() {
+  const tbody = document.getElementById('usersTableBody');
+  const users = loadUsers();
+  tbody.innerHTML = '';
+
+  users.forEach((user, index) => {
+    const row = document.createElement('tr');
+    const roleBadge = user.role === 'admin' ? 'badge-admin' : 'badge-user';
+    const stateBadge = user.active ? 'badge-active' : 'badge-inactive';
+    const toggleLabel = user.active ? 'Desactivar' : 'Activar';
+
+    row.innerHTML = `
+      <td>${user.username}</td>
+      <td>${user.name}</td>
+      <td>${user.email}</td>
+      <td><span class="badge ${roleBadge}">${user.role}</span></td>
+      <td><span class="badge ${stateBadge}">${user.active ? 'activo' : 'inactivo'}</span></td>
+      <td style="display:flex;gap:6px;flex-wrap:wrap">
+        <button class="btn-xs btn-edit" data-action="edit" data-index="${index}">Editar</button>
+        <button class="btn-xs btn-toggle" data-action="toggle" data-index="${index}">${toggleLabel}</button>
+        <button class="btn-xs btn-delete" data-action="delete" data-index="${index}">Eliminar</button>
+      </td>
+    `;
+    tbody.append(row);
+  });
+}
+
+function getFormUser() {
+  return {
+    username: document.getElementById('userLogin').value.trim(),
+    password: document.getElementById('userPass').value.trim(),
+    name: document.getElementById('userName').value.trim(),
+    email: document.getElementById('userEmail').value.trim(),
+    phone: document.getElementById('userPhone').value.trim(),
+    role: document.getElementById('userRole').value,
+    active: document.getElementById('userActive').checked
+  };
+}
+
+document.getElementById('saveUserBtn').addEventListener('click', () => {
+  const users = loadUsers();
+  const user = getFormUser();
+
+  if (!user.username || !user.password || !user.name || !user.email) {
+    alert('Completa usuario, contraseña, nombre y correo.');
+    return;
+  }
+
+  if (editingIndex === null) {
+    if (users.some(u => u.username.toLowerCase() === user.username.toLowerCase())) {
+      alert('El usuario ya existe.');
+      return;
+    }
+    users.push(user);
+  } else {
+    users[editingIndex] = user;
+  }
+
+  saveUsers(users);
+  renderUsers();
+  resetForm();
+});
+
+document.getElementById('clearUserBtn').addEventListener('click', () => {
+  resetForm();
+});
+
+document.getElementById('usersTableBody').addEventListener('click', e => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  const index = Number(btn.getAttribute('data-index'));
+  const action = btn.getAttribute('data-action');
+  const users = loadUsers();
+  const user = users[index];
+
+  if (!user) return;
+
+  if (action === 'edit') {
+    editingIndex = index;
+    document.getElementById('userLogin').value = user.username;
+    document.getElementById('userPass').value = user.password;
+    document.getElementById('userName').value = user.name;
+    document.getElementById('userEmail').value = user.email;
+    document.getElementById('userPhone').value = user.phone || '';
+    document.getElementById('userRole').value = user.role;
+    document.getElementById('userActive').checked = user.active;
+    document.getElementById('saveUserBtn').textContent = 'Actualizar usuario';
+    return;
+  }
+
+  if (action === 'toggle') {
+    users[index].active = !users[index].active;
+    saveUsers(users);
+    renderUsers();
+    return;
+  }
+
+  if (action === 'delete') {
+    if (confirm('¿Eliminar usuario?')) {
+      users.splice(index, 1);
+      saveUsers(users);
+      renderUsers();
+      if (editingIndex === index) {
+        resetForm();
+      }
+    }
+  }
+});
+
 function loadImages() {
   return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 }
@@ -161,8 +492,7 @@ function saveImages(arr) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
 }
 
-// === Renderizado de imágenes guardadas ===
-function render() {
+function renderImages() {
   const container = document.getElementById('items');
   const imgs = loadImages();
   container.innerHTML = '';
@@ -195,7 +525,7 @@ function render() {
       if (nuevaURL) {
         imgs[i].src = nuevaURL;
         saveImages(imgs);
-        render();
+        renderImages();
       }
     };
 
@@ -217,7 +547,7 @@ function render() {
       if (confirm('¿Eliminar imagen?')) {
         imgs.splice(i, 1);
         saveImages(imgs);
-        render();
+        renderImages();
       }
     };
 
@@ -227,7 +557,6 @@ function render() {
   });
 }
 
-// === Mostrar modal ===
 function showModal(src) {
   const modal = document.createElement('div');
   modal.className = 'modal';
@@ -240,7 +569,6 @@ function showModal(src) {
   document.body.append(modal);
 }
 
-// === Agregar imagen con vista previa ===
 document.getElementById('fileInput').addEventListener('change', e => {
   const file = e.target.files[0];
   if (!file) return;
@@ -256,21 +584,20 @@ document.getElementById('fileInput').addEventListener('change', e => {
   document.querySelector('.controls').append(preview);
 });
 
-// === Botón Agregar ===
 document.getElementById('addBtn').addEventListener('click', () => {
   const file = document.getElementById('fileInput').files[0];
   const url = document.getElementById('urlInput').value.trim();
   const link = document.getElementById('linkInput').value.trim();
   const imgs = loadImages();
 
-  if (imgs.length >= 100) return alert('Máximo 100 imágenes.');
+  if (imgs.length >= 100) return alert('Maximo 100 imagenes.');
 
   if (file) {
     const reader = new FileReader();
     reader.onload = e => {
       imgs.push({ src: e.target.result, link });
       saveImages(imgs);
-      render();
+      renderImages();
       alert('Imagen agregada correctamente.');
       document.getElementById('fileInput').value = '';
       document.getElementById('previewImg')?.remove();
@@ -279,24 +606,21 @@ document.getElementById('addBtn').addEventListener('click', () => {
   } else if (url) {
     imgs.push({ src: url, link });
     saveImages(imgs);
-    render();
+    renderImages();
     alert('Imagen agregada correctamente.');
   } else {
     alert('Selecciona una imagen o ingresa URL.');
   }
 });
 
-// === Botón cerrar sesión ===
 document.getElementById('logoutBtn').addEventListener('click', () => {
   localStorage.removeItem('isLoggedIn');
   window.location.href = 'login.html';
 });
 
-// Inicializar
-render();
-
-
-
+seedUsers();
+renderUsers();
+renderImages();
 </script>
 
 </body>
