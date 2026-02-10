@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Server (jar)" type="JarApplication" factoryName="JAR Application">
+    <option name="JAR_PATH" value="C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala\sbt-launch.jar" />
+    <option name="PROGRAM_PARAMETERS" value="run" />
+    <option name="WORKING_DIRECTORY" value="C:\Users\artes\Documents\UTP-Ciclo VII\Lenguaje de Programación\Proj-Artes-Luis-Estudio\ArtesLuisStudio-Scala" />
+    <method v="2" />
+  </configuration>
+</component>
