@@ -1,4 +1,4 @@
-🎨 Sistema de Soporte Operacional – Artes Luis Studi
+🎨 Sistema de Soporte Operacional – Artes Luis Studio
 
 📌 Descripción del Proyecto
 El proyecto Artes Luis Studio es una solución de software orientada a la gestión operativa y administrativa, desarrollada como parte del curso Lenguajes de Programación de la Universidad Tecnológica del Perú (UTP), correspondiente al Ciclo Verano 2026.
