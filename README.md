@@ -69,6 +69,37 @@ Plaintext
 El desarrollo se realiza mediante Sprints con entregas incrementales:
 
 1.    Sprint 1: Configuración de entorno, repositorio y estructura base.
+Durante el **Sprint 1** se implementaron las siguientes historias técnicas, respetando estrictamente los lineamientos definidos en el caso de negocio:
+
+### 1️⃣ Configurar repositorio Git con estructura profesional
+Se creó un repositorio Git con una estructura organizada, separando el código fuente, archivos de configuración y documentación, garantizando orden y mantenibilidad del proyecto desarrollado en Scala.
+
+### 2️⃣ Definir estrategia de ramas y convención de commits
+Se estableció una estrategia de ramas que incluye ramas principales y ramas de desarrollo, así como una convención de mensajes de commits claros y estandarizados, facilitando el seguimiento de cambios en el proyecto.
+
+### 3️⃣ Configurar protección de ramas principales
+Se configuró la protección de las ramas principales del repositorio para evitar modificaciones directas, asegurando que todos los cambios pasen por un proceso de revisión previa.
+
+### 4️⃣ Implementar Pull Requests obligatorios
+Se implementó el uso obligatorio de Pull Requests para la integración de código, promoviendo la revisión colaborativa y reduciendo errores antes de fusionar los cambios.
+
+### 5️⃣ Gestionar conflictos de fusión
+Se gestionaron y resolvieron conflictos de fusión entre ramas, aplicando buenas prácticas de control de versiones y garantizando la coherencia del código fuente.
+
+### 6️⃣ Configurar plantillas de Issues y Pull Requests
+Se crearon plantillas estandarizadas para Issues y Pull Requests, permitiendo una comunicación clara, ordenada y consistente entre los miembros del equipo durante el desarrollo del proyecto.
+
+### 7️⃣ Documentar flujo de trabajo colaborativo
+Se documentó detalladamente el flujo de trabajo colaborativo, describiendo el proceso desde la creación de ramas hasta la fusión final del código, sirviendo como guía para el equipo.
+
+### 8️⃣ Gestionar versionado y releases
+Se implementó el control de versionado del proyecto mediante etiquetas (**tags**), permitiendo identificar claramente las versiones y los avances realizados en cada etapa del desarrollo.
+
+### 9️⃣ Configurar repositorio remoto en la nube
+Se configuró el repositorio remoto en la nube utilizando **GitHub**, facilitando el acceso al código, el trabajo colaborativo y la disponibilidad del proyecto en línea.
+
+### 🔟 Documentar evidencias de colaboración
+Se documentaron evidencias del trabajo colaborativo, tales como commits, Pull Requests, Issues y versiones del proyecto, demostrando la participación activa del equipo durante el Sprint 1.
 
 2.    Sprint 2: Implementación de la lógica del microservicio y modelos.
 
