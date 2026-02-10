@@ -1,165 +1,126 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('nav.sidebar a').forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
-      link.classList.add('active');
+const USERS_KEY = "users_v1";
+const CURRENT_USER_KEY = "currentUser_v1";
+
+function getUsers() {
+  return JSON.parse(localStorage.getItem(USERS_KEY) || "[]");
+}
+
+function saveUsers(users) {
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
+}
+
+function createId() {
+  if (window.crypto && crypto.randomUUID) {
+    return crypto.randomUUID();
+  }
+  return `user_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
+}
+
+function ensureDefaultAdmin() {
+  const users = getUsers();
+  const hasAdmin = users.some((u) => u.username === "admin");
+  if (!hasAdmin) {
+    users.push({
+      id: createId(),
+      username: "admin",
+      password: "1234",
+      fullName: "Administrador",
+      email: "admin@artesluis.com",
+      role: "admin",
+      active: true,
+      createdAt: new Date().toISOString()
+    });
+    saveUsers(users);
+  }
+}
+
+function setCurrentUser(user) {
+  localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(user));
+  localStorage.setItem("isLoggedIn", "true");
+}
+
+function clearCurrentUser() {
+  localStorage.removeItem(CURRENT_USER_KEY);
+  localStorage.removeItem("isLoggedIn");
+}
+
+function getCurrentUser() {
+  const raw = localStorage.getItem(CURRENT_USER_KEY);
+  return raw ? JSON.parse(raw) : null;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll("nav.sidebar a").forEach((link) => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
     } else {
-      link.classList.remove('active');
+      link.classList.remove("active");
     }
   });
-});
 
+  ensureDefaultAdmin();
 
-// --- Script para gestionar imágenes en admin.html ---
-document.addEventListener("DOMContentLoaded", () => {
-  const gallery = document.getElementById("gallery");
-  const input = document.getElementById("imageInput");
+  const loginForm = document.getElementById("loginForm");
+  if (loginForm) {
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-  if (input && gallery) {
-    input.addEventListener("change", (event) => {
-      const files = event.target.files;
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const message = document.getElementById("loginMessage");
 
-      // 🔹 Límite de imágenes (puedes cambiar el número)
-      if (gallery.children.length >= 10) {
-        alert("Solo puedes subir un máximo de 10 imágenes.");
+      const users = getUsers();
+      const user = users.find(
+        (item) =>
+          item.username.toLowerCase() === username.toLowerCase() &&
+          item.password === password
+      );
+
+      if (!user) {
+        message.textContent = "Usuario o contrasena incorrectos.";
         return;
       }
 
-      for (const file of files) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          const container = document.createElement("div");
-          container.classList.add("image-container");
-
-          const img = document.createElement("img");
-          img.src = e.target.result;
-          img.alt = "Imagen subida";
-          img.classList.add("gallery-image");
-
-          // 🔹 Click para abrir visor emergente
-          img.addEventListener("click", () => {
-            const viewer = document.createElement("div");
-            viewer.classList.add("image-viewer");
-            viewer.innerHTML = `
-              <div class="viewer-content">
-                <span class="close">&times;</span>
-                <img src="${img.src}" alt="Imagen ampliada">
-              </div>
-            `;
-            document.body.appendChild(viewer);
-
-            viewer.querySelector(".close").addEventListener("click", () => {
-              viewer.remove();
-            });
-          });
-
-          // 🔹 Botones editar / eliminar
-          const btnDelete = document.createElement("button");
-          btnDelete.textContent = "Eliminar";
-          btnDelete.classList.add("delete-btn");
-          btnDelete.addEventListener("click", () => container.remove());
-
-          const btnEdit = document.createElement("button");
-          btnEdit.textContent = "Editar";
-          btnEdit.classList.add("edit-btn");
-          btnEdit.addEventListener("click", () => {
-            const newSrc = prompt("Pega la nueva URL de la imagen:");
-            if (newSrc) img.src = newSrc;
-          });
-
-          container.appendChild(img);
-          container.appendChild(btnEdit);
-          container.appendChild(btnDelete);
-          gallery.appendChild(container);
-        };
-        reader.readAsDataURL(file);
+      if (!user.active) {
+        message.textContent = "Usuario inactivo. Contacta al administrador.";
+        return;
       }
-    });
-  }
-});
 
+      setCurrentUser({
+        id: user.id,
+        username: user.username,
+        role: user.role,
+        fullName: user.fullName
+      });
 
-
-// --- LOGIN ADMINISTRADOR ---
-document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.getElementById("loginForm");
-
-  if (loginForm) {
-    loginForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const message = document.getElementById("loginMessage");
-
-      // 🔹 Usuario y contraseña predefinidos
-      const USER = "admin";
-      const PASS = "1234";
-
-      if (username === USER && password === PASS) {
-        localStorage.setItem("isLoggedIn", "true");
+      if (user.role === "admin") {
         window.location.href = "admin.html";
       } else {
-        message.textContent = "Usuario o contraseña incorrectos.";
+        window.location.href = "index.html";
       }
     });
   }
 
-  // --- Protección del panel admin ---
   if (window.location.pathname.includes("admin.html")) {
-    const logged = localStorage.getItem("isLoggedIn");
-    if (logged !== "true") {
-      window.location.href = "login.html";
-    }
-  }
-});
-
-
-// --- LOGIN ADMINISTRADOR ---
-document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.getElementById("loginForm");
-
-  if (loginForm) {
-    loginForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
-      const message = document.getElementById("loginMessage");
-
-      const USER = "admin";
-      const PASS = "1234";
-
-      if (username === USER && password === PASS) {
-        localStorage.setItem("isLoggedIn", "true");
-        window.location.href = "admin.html";
-      } else {
-        message.textContent = "Usuario o contraseña incorrectos.";
-      }
-    });
-  }
-
-  // Protección de acceso al admin
-  if (window.location.pathname.includes("admin.html")) {
-    const logged = localStorage.getItem("isLoggedIn");
-    if (logged !== "true") {
+    const currentUser = getCurrentUser();
+    if (!currentUser || currentUser.role !== "admin") {
       window.location.href = "login.html";
     }
   }
 
-  // --- Cerrar sesión ---
   const logoutBtn = document.getElementById("logoutBtn");
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
-      localStorage.removeItem("isLoggedIn");
+      clearCurrentUser();
       window.location.href = "login.html";
     });
   }
 });
 
 function logout() {
-  localStorage.removeItem('isLoggedIn');
-  window.location.href = 'login.html';
+  clearCurrentUser();
+  window.location.href = "login.html";
 }
 
 

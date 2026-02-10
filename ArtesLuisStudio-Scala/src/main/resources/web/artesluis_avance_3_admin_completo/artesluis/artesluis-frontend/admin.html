@@ -62,6 +62,15 @@ input[type="text"], input[type="file"] {
   border: 1px solid #e2e8f0;
   width: 100%;
 }
+.controls select,
+.controls input[type="email"],
+.controls input[type="password"],
+.controls input[type="tel"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+}
 .btn-save {
   background: #10b981;
   color: white;
@@ -71,6 +80,17 @@ input[type="text"], input[type="file"] {
   cursor: pointer;
 }
 .btn-save:hover { background: #059669; }
+.btn-ghost {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-danger { background: #ef4444; }
+.btn-warning { background: #f59e0b; }
+.btn-primary { background: #2563eb; }
 
 .grid {
   display: grid;
@@ -112,6 +132,43 @@ input[type="text"], input[type="file"] {
   font-size: 2rem;
   cursor: pointer;
 }
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+.user-table th,
+.user-table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px;
+  text-align: left;
+}
+.user-table th {
+  color: #334155;
+  font-weight: 600;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.badge-admin { background: #dbeafe; color: #1d4ed8; }
+.badge-user { background: #fef3c7; color: #b45309; }
+.badge-active { background: #dcfce7; color: #166534; }
+.badge-inactive { background: #fee2e2; color: #991b1b; }
+.user-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.user-message {
+  margin-top: 10px;
+  color: #0f172a;
+  font-size: 0.9rem;
+}
 </style>
 </head>
 
@@ -130,6 +187,42 @@ input[type="text"], input[type="file"] {
     <div class="admin-header">
       <h1 style="color:#2563eb">Panel de Administración</h1>
     </div>
+
+    <section class="card" id="userAdmin">
+      <h3>Usuarios del sistema</h3>
+      <form id="userForm" class="controls" autocomplete="off">
+        <input type="hidden" id="userId">
+        <input type="text" id="userName" placeholder="Usuario (login)" required>
+        <input type="password" id="userPassword" placeholder="Contrasena" required>
+        <input type="text" id="userFullName" placeholder="Nombre completo" required>
+        <input type="email" id="userEmail" placeholder="Correo" required>
+        <input type="tel" id="userPhone" placeholder="Telefono">
+        <select id="userRole" required>
+          <option value="admin">Administrador</option>
+          <option value="usuario">Usuario</option>
+        </select>
+        <label style="display:flex;align-items:center;gap:6px">
+          <input type="checkbox" id="userActive" checked>
+          Activo
+        </label>
+        <button type="submit" class="btn-save" id="userSubmitBtn">Crear usuario</button>
+        <button type="button" class="btn-ghost" id="userResetBtn">Limpiar</button>
+      </form>
+      <div id="userMessage" class="user-message"></div>
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Rol</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+      </table>
+    </section>
 
     <section class="card">
       <h3>Agregar imagen al enlace / portafolio</h3>
@@ -150,8 +243,68 @@ input[type="text"], input[type="file"] {
     </section>
   </main>
 
+<script src="script.js"></script>
 <script>
 const STORAGE_KEY = 'gallery_v3';
+const USERS_KEY = 'users_v1';
+const CURRENT_USER_KEY = 'currentUser_v1';
+
+function loadUsers() {
+  return JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
+}
+
+function saveUsers(users) {
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
+}
+
+function getCurrentUser() {
+  const raw = localStorage.getItem(CURRENT_USER_KEY);
+  return raw ? JSON.parse(raw) : null;
+}
+
+function createId() {
+  if (window.crypto && crypto.randomUUID) {
+    return crypto.randomUUID();
+  }
+  return `user_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
+}
+
+function showUserMessage(text, isError) {
+  const message = document.getElementById('userMessage');
+  message.textContent = text;
+  message.style.color = isError ? '#b91c1c' : '#0f172a';
+}
+
+function resetUserForm() {
+  document.getElementById('userId').value = '';
+  document.getElementById('userName').value = '';
+  document.getElementById('userPassword').value = '';
+  document.getElementById('userFullName').value = '';
+  document.getElementById('userEmail').value = '';
+  document.getElementById('userPhone').value = '';
+  document.getElementById('userRole').value = 'usuario';
+  document.getElementById('userActive').checked = true;
+  document.getElementById('userSubmitBtn').textContent = 'Crear usuario';
+}
+
+function ensureAdminUser() {
+  const users = loadUsers();
+  const hasAdmin = users.some((user) => user.username === 'admin');
+  if (!hasAdmin) {
+    users.push({
+      id: createId(),
+      username: 'admin',
+      password: '1234',
+      fullName: 'Administrador',
+      email: 'admin@artesluis.com',
+      phone: '',
+      role: 'admin',
+      active: true,
+      createdAt: new Date().toISOString()
+    });
+    saveUsers(users);
+  }
+}
 
 // === Funciones para almacenamiento ===
 function loadImages() {
@@ -288,15 +441,181 @@ document.getElementById('addBtn').addEventListener('click', () => {
 
 // === Botón cerrar sesión ===
 document.getElementById('logoutBtn').addEventListener('click', () => {
+  localStorage.removeItem(CURRENT_USER_KEY);
   localStorage.removeItem('isLoggedIn');
   window.location.href = 'login.html';
 });
 
 // Inicializar
 render();
+ensureAdminUser();
+renderUsers();
 
+function renderUsers() {
+  const tbody = document.getElementById('userTableBody');
+  const users = loadUsers();
+  tbody.innerHTML = '';
 
+  users.forEach((user) => {
+    const tr = document.createElement('tr');
 
+    const roleClass = user.role === 'admin' ? 'badge-admin' : 'badge-user';
+    const statusClass = user.active ? 'badge-active' : 'badge-inactive';
+    tr.innerHTML = `
+      <td>${user.username}</td>
+      <td>${user.fullName}</td>
+      <td>${user.email}</td>
+      <td><span class="badge ${roleClass}">${user.role}</span></td>
+      <td><span class="badge ${statusClass}">${user.active ? 'activo' : 'inactivo'}</span></td>
+      <td>
+        <div class="user-actions">
+          <button class="btn-save btn-primary" data-action="edit" data-id="${user.id}">Editar</button>
+          <button class="btn-save btn-warning" data-action="toggle" data-id="${user.id}">
+            ${user.active ? 'Desactivar' : 'Activar'}
+          </button>
+          <button class="btn-save btn-danger" data-action="delete" data-id="${user.id}">Eliminar</button>
+        </div>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+document.getElementById('userForm').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const id = document.getElementById('userId').value.trim();
+  const username = document.getElementById('userName').value.trim();
+  const password = document.getElementById('userPassword').value.trim();
+  const fullName = document.getElementById('userFullName').value.trim();
+  const email = document.getElementById('userEmail').value.trim();
+  const phone = document.getElementById('userPhone').value.trim();
+  const role = document.getElementById('userRole').value;
+  const active = document.getElementById('userActive').checked;
+
+  if (!username || !password || !fullName || !email) {
+    showUserMessage('Completa los campos obligatorios.', true);
+    return;
+  }
+
+  const users = loadUsers();
+  const normalized = username.toLowerCase();
+  const existing = users.find((user) => user.username.toLowerCase() === normalized);
+
+  if (!id && existing) {
+    showUserMessage('Ese usuario ya existe.', true);
+    return;
+  }
+
+  if (id) {
+    const index = users.findIndex((user) => user.id === id);
+    if (index === -1) {
+      showUserMessage('No se encontro el usuario a editar.', true);
+      return;
+    }
+
+    if (existing && existing.id !== id) {
+      showUserMessage('Ese usuario ya existe.', true);
+      return;
+    }
+
+    users[index] = {
+      ...users[index],
+      username,
+      password,
+      fullName,
+      email,
+      phone,
+      role,
+      active
+    };
+    saveUsers(users);
+    renderUsers();
+    resetUserForm();
+    showUserMessage('Usuario actualizado.', false);
+    return;
+  }
+
+  users.push({
+    id: createId(),
+    username,
+    password,
+    fullName,
+    email,
+    phone,
+    role,
+    active,
+    createdAt: new Date().toISOString()
+  });
+  saveUsers(users);
+  renderUsers();
+  resetUserForm();
+  showUserMessage('Usuario creado.', false);
+});
+
+document.getElementById('userResetBtn').addEventListener('click', () => {
+  resetUserForm();
+  showUserMessage('', false);
+});
+
+document.getElementById('userTableBody').addEventListener('click', (event) => {
+  const btn = event.target.closest('button[data-action]');
+  if (!btn) return;
+
+  const action = btn.getAttribute('data-action');
+  const id = btn.getAttribute('data-id');
+  const users = loadUsers();
+  const userIndex = users.findIndex((user) => user.id === id);
+  if (userIndex === -1) return;
+
+  const currentUser = getCurrentUser();
+
+  if (action === 'edit') {
+    const user = users[userIndex];
+    document.getElementById('userId').value = user.id;
+    document.getElementById('userName').value = user.username;
+    document.getElementById('userPassword').value = user.password;
+    document.getElementById('userFullName').value = user.fullName;
+    document.getElementById('userEmail').value = user.email;
+    document.getElementById('userPhone').value = user.phone || '';
+    document.getElementById('userRole').value = user.role;
+    document.getElementById('userActive').checked = user.active;
+    document.getElementById('userSubmitBtn').textContent = 'Guardar cambios';
+    showUserMessage('Editando usuario.', false);
+    return;
+  }
+
+  if (action === 'toggle') {
+    if (users[userIndex].username === 'admin') {
+      showUserMessage('El administrador principal no puede desactivarse.', true);
+      return;
+    }
+    if (currentUser && currentUser.id === users[userIndex].id && users[userIndex].active) {
+      showUserMessage('No puedes desactivarte a ti mismo.', true);
+      return;
+    }
+    users[userIndex].active = !users[userIndex].active;
+    saveUsers(users);
+    renderUsers();
+    showUserMessage('Estado actualizado.', false);
+    return;
+  }
+
+  if (action === 'delete') {
+    if (users[userIndex].username === 'admin') {
+      showUserMessage('El administrador principal no puede eliminarse.', true);
+      return;
+    }
+    if (currentUser && currentUser.id === users[userIndex].id) {
+      showUserMessage('No puedes eliminarte a ti mismo.', true);
+      return;
+    }
+    if (!confirm('Eliminar este usuario?')) return;
+    users.splice(userIndex, 1);
+    saveUsers(users);
+    renderUsers();
+    showUserMessage('Usuario eliminado.', false);
+  }
+});
 </script>
 
 </body>
