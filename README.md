@@ -36,13 +36,6 @@ El sistema contempla las siguientes capacidades técnicas:
 
 *    🔐 Módulo de Autenticación: Validación de credenciales para el inicio de sesión.
 
-*    👥 Gestión de Roles: Asignación de permisos diferenciados (Admin, Operador, etc.).
-
-*    🌐 Servicios REST: Endpoints para la comunicación entre el frontend y el microservicio.
-
-*    📁 Persistencia de Datos: Almacenamiento estructurado de información de usuarios y perfiles.
-
-*    📄 Formato JSON: Intercambio de datos estandarizado para todas las respuestas del API.
 
 🛠️ Tecnologías Utilizadas
 
